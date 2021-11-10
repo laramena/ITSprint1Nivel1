@@ -1,38 +1,86 @@
-
+*{
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 100px;
+}
 .container{
 max-width: 1200px; 
-margin:auto;
+
 }
 
 .content{
 display: flex;
 }
 
+
 .nav-content{
-	display: flex;
-	flex-direction:column;
+display: flex;
+flex-direction: row;
+background-color: #ECEFF1;
+
+}
+
+.menu{
+	flex:9;
+}
+
+.redes{
 	flex:1;
-	background-color:black;
+	display:flex;
 }
 
-.tres-linias{
-	flex: 1;
-	flex-direction: row;
-	display: flex;
-	margin: 10px;
-	padding: 10px;
-	background-color: #455A64;
+.logo{
+	flex:1;
+	float: left; 
+	margin: 15px;
+	padding-left:10px;
 }
 
-.una-linia{
-	flex: 1;
-	flex-direction: row;
-	display: flex;
-	margin: 10px;
-	padding: 10px;
-	background-color:#FF8A65;
+ul{
+	display:flex;
+	list-style: none;
 }
 
+.menu-li{
+	margin: 15px;
+	padding-left:0px;
+	
+}
+
+.menu-li  i{
+	margin-left: 5x;
+	padding-left: 10px;
+}
+
+.menu-li:hover {
+	color: pink;
+} 
+
+.puerta{
+	position: relative;
+}	
+
+
+.puerta img{
+	width: 100%;
+	height: 300px;
+}
+	  
+@supports(object-fit: cover){
+	.puerta img{
+	object-fit: cover;
+	object-position: center center;
+}	
+}
+
+.texto_puerta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 600%);
+	opacity:0.8;
+	
+}
+_______
 article{
 	background-color:#455A64;
 	flex:3;
